@@ -1,5 +1,9 @@
 <template>
     <div class="wrapper">
+
+        1111122222222222
+
+        <test></test>
         <v-head></v-head>
         <v-sidebar></v-sidebar>
         <div class="content-box" :class="{'content-collapse':collapse}">
@@ -19,6 +23,7 @@
     import vHead from './Header.vue';
     import vSidebar from './Sidebar.vue';
     import vTags from './Tags.vue';
+    import test from '../page/test.vue';
     import bus from './bus';
     export default {
         data(){
@@ -28,7 +33,7 @@
             }
         },
         components:{
-            vHead, vSidebar, vTags
+            vHead, vSidebar, vTags,test,
         },
         created(){
             bus.$on('collapse', msg => {

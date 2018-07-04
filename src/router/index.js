@@ -22,13 +22,13 @@ export default new Router({
                 {
                     path: '/table',
                     component: resolve => require(['../components/page/BaseTable.vue'], resolve),
-                    meta: { title: '基础表格' }
+                    meta: { title: '环境管理' }
                 },
                 {
                     // 权限页面
                     path: '/permission',
                     component: resolve => require(['../components/page/Permission.vue'], resolve),
-                    meta: { title: '权限测试', permission: true }
+                    meta: { title: '监控', permission: true }
                 }
             ]
         },

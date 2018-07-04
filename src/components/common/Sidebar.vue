@@ -38,13 +38,13 @@
                     {
                         icon: 'el-icon-tickets',
                         index: 'table',
-                        title: '基础表格'
+                        title: '环境管理'
                     },
-                    
+
                     {
                         icon: 'el-icon-warning',
                         index: 'permission',
-                        title: '权限测试'
+                        title: '监控'
                     },
                     {
                         icon: 'el-icon-error',

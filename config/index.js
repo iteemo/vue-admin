@@ -12,14 +12,14 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api':{
-          target:'http://jsonplaceholder.typicode.com',
+          target:'http://39.107.41.61:1314',
           changeOrigin:true,
           pathRewrite:{
               '/api':''
           }
       },
-      '/ms':{
-          target: 'https://www.easy-mock.com/mock/592501a391470c0ac1fab128',
+      '/msi':{
+          target: 'https://www.1easy-mock.com/mock/592501a391470c0ac1fab128',
           changeOrigin: true
       }
     },
@@ -31,7 +31,7 @@ module.exports = {
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-    
+
     /**
      * Source Maps
      */

@@ -1,20 +1,7 @@
 <template>
     <div class="table">
         <div class="crumbs">
-            <el-breadcrumb separator="/">
-                <el-breadcrumb-item><i class="el-icon-tickets"></i> 基础表格</el-breadcrumb-item>
-            </el-breadcrumb>
-        </div>
-        <div class="container">
-            <div class="handle-box">
-                <el-button type="primary" icon="delete" class="handle-del mr10" @click="delAll">批量删除</el-button>
-                <el-select v-model="select_cate" placeholder="筛选省份" class="handle-select mr10">
-                    <el-option key="1" label="广东省" value="广东省"></el-option>
-                    <el-option key="2" label="湖南省" value="湖南省"></el-option>
-                </el-select>
-                <el-input v-model="select_word" placeholder="筛选关键词" class="handle-input mr10"></el-input>
-                <el-button type="primary" icon="search" @click="search">搜索</el-button>
-            </div>
+
             <el-table :data="data" border style="width: 100%" ref="multipleTable" @selection-change="handleSelectionChange">
                 <el-table-column type="selection" width="55"></el-table-column>
                 <el-table-column prop="date" label="日期" sortable width="150">
@@ -68,11 +55,12 @@
 </template>
 
 <script>
+    // import weff from '@wefwef'
     export default {
         name: 'basetable',
         data() {
             return {
-                url: './static/vuetable.json',
+                url: '/dvd-docker/v1.0/image/images',
                 tableData: [],
                 cur_page: 1,
                 multipleSelection: [],
