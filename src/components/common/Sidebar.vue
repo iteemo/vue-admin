@@ -47,6 +47,11 @@
                         title: '监控'
                     },
                     {
+                        icon: 'el-icon-warning',
+                        index: 'test2',
+                        title: 'test2'
+                    },
+                    {
                         icon: 'el-icon-error',
                         index: '404',
                         title: '404页面'

@@ -29,6 +29,12 @@ export default new Router({
                     path: '/permission',
                     component: resolve => require(['../components/page/Permission.vue'], resolve),
                     meta: { title: '监控', permission: true }
+                },
+                {
+                    //test页面
+                    path:'/test2',
+                    component: resolve => require(['../components/page/test2.vue'], resolve),
+                    meta: { title: 'test2', permission: true }
                 }
             ]
         },

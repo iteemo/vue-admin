@@ -55,7 +55,6 @@
 </template>
 
 <script>
-    // import weff from '@wefwef'
     export default {
         name: 'basetable',
         data() {
