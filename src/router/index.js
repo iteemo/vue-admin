@@ -25,6 +25,11 @@ export default new Router({
                     meta: { title: '环境管理' }
                 },
                 {
+                    path: '/envment',
+                    component: resolve => require(['../components/page/envment.vue'], resolve),
+                    meta: { title: '环境管理2' }
+                },
+                {
                     // 权限页面
                     path: '/permission',
                     component: resolve => require(['../components/page/Permission.vue'], resolve),

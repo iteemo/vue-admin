@@ -1,9 +1,7 @@
 <template>
     <div class="wrapper">
 
-        <!--1111122222222222-->
 
-        <!--<test></test>-->
         <v-head></v-head>
         <v-sidebar></v-sidebar>
         <div class="content-box" :class="{'content-collapse':collapse}">

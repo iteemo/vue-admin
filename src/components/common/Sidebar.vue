@@ -40,6 +40,11 @@
                         index: 'table',
                         title: '环境管理'
                     },
+                    {
+                        icon: 'el-icon-tickets',
+                        index: 'envment',
+                        title: '环境管理2'
+                    },
 
                     {
                         icon: 'el-icon-warning',
